@@ -4,11 +4,11 @@
 
 ## 功能展示
 
-### 扩展介绍
-![扩展介绍](introduce.png)
-
 ### LLM 设置
 ![LLM设置](llm_setting.jpg)
+
+### 扩展介绍
+![扩展介绍](introduce.png)
 
 ### 代码生成
 ![代码生成](generation.jpg)
