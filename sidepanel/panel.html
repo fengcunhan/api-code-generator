@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>API 代码生成器</title>
+  <link rel="stylesheet" href="../lib/styles/tomorrow-night-bright.min.css">
+  <link rel="stylesheet" href="panel.css">
+  <!-- Use local marked.js instead of CDN -->
+  <script src="../lib/marked.min.js"></script>
+</head>
+<body>
+  <div class="sidebar-container">
+    <div class="sidebar-header">
+      <h2>API 代码生成器</h2>
+    </div>
+    <div class="sidebar-content">
+      <div class="language-selector-section">
+        <h3>选择编程语言</h3>
+        <div class="language-options">
+          <div class="language-option">
+            <input type="radio" id="lang-js" name="language" value="JavaScript" checked>
+            <label for="lang-js">JavaScript</label>
+          </div>
+          <div class="language-option">
+            <input type="radio" id="lang-py" name="language" value="Python">
+            <label for="lang-py">Python</label>
+          </div>
+          <div class="language-option">
+            <input type="radio" id="lang-java" name="language" value="Java">
+            <label for="lang-java">Java</label>
+          </div>
+          <div class="language-option">
+            <input type="radio" id="lang-go" name="language" value="Go">
+            <label for="lang-go">Go</label>
+          </div>
+          <div class="language-option">
+            <input type="radio" id="lang-csharp" name="language" value="C#">
+            <label for="lang-csharp">C#</label>
+          </div>
+          <div class="language-option">
+            <input type="radio" id="lang-php" name="language" value="PHP">
+            <label for="lang-php">PHP</label>
+          </div>
+          <div class="language-option">
+            <input type="radio" id="lang-ruby" name="language" value="Ruby">
+            <label for="lang-ruby">Ruby</label>
+          </div>
+          <div class="language-option">
+            <input type="radio" id="lang-swift" name="language" value="Swift">
+            <label for="lang-swift">Swift</label>
+          </div>
+          <div class="language-option">
+            <input type="radio" id="lang-kotlin" name="language" value="Kotlin">
+            <label for="lang-kotlin">Kotlin</label>
+          </div>
+          <div class="language-option">
+            <input type="radio" id="lang-ts" name="language" value="TypeScript">
+            <label for="lang-ts">TypeScript</label>
+          </div>
+        </div>
+        <button class="generate-btn">生成代码</button>
+      </div>
+      <div class="code-output-section" style="display: none;">
+        <h3>生成的代码</h3>
+        <div class="code-container">
+          <pre><code class="code-content"></code></pre>
+          <div class="loading-indicator">正在生成代码...</div>
+        </div>
+        <button class="copy-btn">复制代码</button>
+        <button class="back-btn">返回</button>
+      </div>
+    </div>
+  </div>
+  <script src="../lib/highlight.min.js"></script>
+  <script src="panel.js"></script>
+</body>
+</html>

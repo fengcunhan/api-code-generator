@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>API Code Generator</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>API Code Generator</h1>
+    <p>选中API文档，右键点击"生成API代码"</p>
+    
+    <div class="settings">
+      <h2>设置</h2>
+      <div class="setting-item">
+        <label for="api-key">API Key:</label>
+        <input type="password" id="api-key" placeholder="输入你的API Key">
+      </div>
+      <div class="setting-item">
+        <label for="api-endpoint">API Endpoint:</label>
+        <input type="text" id="api-endpoint" placeholder="https://api.openai.com/v1/chat/completions">
+      </div>
+      <!-- 在模型选择下拉框中添加自定义选项 -->
+      <div class="setting-item">
+        <label for="model">模型:</label>
+        <select id="model">
+          <option value="gpt-3.5-turbo">GPT-3.5 Turbo</option>
+          <option value="gpt-4">GPT-4</option>
+          <option value="custom">自定义模型</option>
+        </select>
+      </div>
+      
+      <!-- 添加自定义模型输入框 -->
+      <div class="setting-item" id="custom-model-container" style="display: none;">
+        <label for="custom-model">自定义模型名称:</label>
+        <input type="text" id="custom-model" placeholder="例如: gpt-4-turbo">
+      </div>
+      <button id="save-settings">保存设置</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
